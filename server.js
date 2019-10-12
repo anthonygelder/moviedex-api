@@ -21,7 +21,6 @@ app.use(function validateBearerToken(req, res, next) {
     next()
 })
 
-
 app.get('/movies', (req, res) => {
     let response = MOVIES;
     if (req.query.genre) {
